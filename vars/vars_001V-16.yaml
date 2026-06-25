@@ -1,0 +1,19 @@
+alumno:
+  codigo: "001V-16"
+  nombre: "Matias Queralto"
+
+cliente:
+  empresa: "Infraestructura Vial SpA"
+  hostname: "RTR-INFVIAL"
+
+router:
+  ip: "192.168.56.101"
+  usuario: "cisco"
+  password: "cisco123!"
+  loopback_id: 16
+  loopback_ip: "10.1.16.1"
+  loopback_mask: "255.255.255.0"
+  loopback_prefix: "24"
+  descripcion_wan: "Enlace-WAN-Punta-Arenas"
+  banner: "ACCESO RESTRINGIDO - INFVIAL"
+  ntp_server: "208.67.222.222"
