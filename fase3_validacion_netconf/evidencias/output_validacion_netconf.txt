@@ -1,0 +1,16 @@
+==================================================
+Script  : validacion_netconf.py
+Fecha   : 2026-06-25 20:40:15
+Host    : labvm
+==================================================
+XML guardado en evidencias/rpc_reply_raw.xml
+
+--- REPORTE DE VALIDACION NETCONF ---
+[OK] hostname: obtenido='RTR-INFVIAL' esperado='RTR-INFVIAL'
+[OK] loopback_ip: obtenido='10.1.16.1' esperado='10.1.16.1'
+[OK] loopback_mask: obtenido='255.255.255.0' esperado='255.255.255.0'
+[OK] descripcion_wan: obtenido='Enlace-WAN-Punta-Arenas' esperado='Enlace-WAN-Punta-Arenas'
+[OK] ntp_server: obtenido='208.67.222.222' esperado='208.67.222.222'
+
+Resultado: 5/5 criterios conformes
+CONFORME
