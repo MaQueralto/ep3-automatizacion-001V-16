@@ -1,0 +1,69 @@
+1,47c1,18
+< {
+<   "_exclude": [
+<     "updated"
+<   ],
+<   "attributes": null,
+<   "commands": null,
+<   "connections": null,
+<   "context_manager": {},
+<   "info": {
+<     "vrf": {
+<       "default": {
+<         "address_family": {
+<           "ipv4": {
+<             "routes": {
+<               "192.168.56.0/24": {
+<                 "active": true,
+<                 "next_hop": {
+<                   "outgoing_interface": {
+<                     "GigabitEthernet1": {
+<                       "outgoing_interface": "GigabitEthernet1"
+<                     }
+<                   }
+<                 },
+<                 "route": "192.168.56.0/24",
+<                 "source_protocol": "connected",
+<                 "source_protocol_codes": "C"
+<               },
+<               "192.168.56.101/32": {
+<                 "active": true,
+<                 "next_hop": {
+<                   "outgoing_interface": {
+<                     "GigabitEthernet1": {
+<                       "outgoing_interface": "GigabitEthernet1"
+<                     }
+<                   }
+<                 },
+<                 "route": "192.168.56.101/32",
+<                 "source_protocol": "local",
+<                 "source_protocol_codes": "L"
+<               }
+<             }
+<           }
+<         }
+<       }
+<     }
+<   }
+< }
+\ No newline at end of file
+---
+> Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+>        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+>        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+>        E1 - OSPF external type 1, E2 - OSPF external type 2
+>        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+>        ia - IS-IS inter area, * - candidate default, U - per-user static route
+>        o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+>        a - application route
+>        + - replicated route, % - next hop override, p - overrides from PfR
+> 
+> Gateway of last resort is not set
+> 
+>       10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+> C        10.1.16.0/24 is directly connected, Loopback16
+> L        10.1.16.1/32 is directly connected, Loopback16
+>       192.168.56.0/24 is variably subnetted, 2 subnets, 2 masks
+> C        192.168.56.0/24 is directly connected, GigabitEthernet1
+> L        192.168.56.101/32 is directly connected, GigabitEthernet1
+\ No newline at end of file

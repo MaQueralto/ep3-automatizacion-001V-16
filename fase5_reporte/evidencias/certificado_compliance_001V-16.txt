@@ -1,0 +1,19 @@
+
+==================================================
+   CERTIFICADO DE COMPLIANCE — EP3
+==================================================
+Alumno  : Matias Queralto
+Codigo  : 001V-16
+Empresa : Infraestructura Vial SpA
+Router  : RTR-INFVIAL
+Fecha   : 2026-06-25 21:25:07
+==================================================
+VALIDACION NETCONF  : CONFORME
+VALIDACION RESTCONF : CONFORME
+--------------------------------------------------
+RESULTADO GLOBAL    : CONFORME
+==================================================
+El equipo RTR-INFVIAL ha sido configurado
+y validado exitosamente para Infraestructura Vial SpA.
+Listo para operar en produccion.
+==================================================

@@ -1,0 +1,552 @@
+
+Learning '['interface', 'platform', 'routing']' on devices '['CSR1kv']'
+[1m[31m
+failed to connect to CSR1kv
+Failed while bringing device to "any" state[0m[39m
+
+
+Learning '['interface', 'platform', 'routing']' on devices '['CSR1kv']'
+
+Learning '['interface', 'platform', 'routing']' on devices '['CSR1kv']'
+[1m[31m
+failed to connect to CSR1kv
+Failed while bringing device to "any" state[0m[39m
+
+
+Done
+[2026-06-25 21:21:52,774] +++ CSR1kv logfile /tmp/CSR1kv-default-20260625T212152774.log +++
+[2026-06-25 21:21:52,775] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 21:21:55,198] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 140618507685840 +++
+[2026-06-25 21:21:55,198] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#
+[2026-06-25 21:21:55,311] Learned hostname(s) : ['RTR-INFVIAL'].
+[2026-06-25 21:21:55,311] +++ initializing handle +++
+[2026-06-25 21:21:55,311] +++ RTR-INFVIAL: executing command 'term length 0' +++
+term length 0
+RTR-INFVIAL#
+[2026-06-25 21:21:55,509] +++ RTR-INFVIAL: executing command 'term width 0' +++
+term width 0
+RTR-INFVIAL#
+[2026-06-25 21:21:55,659] +++ RTR-INFVIAL: executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 16.09.05
+Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 30-Jan-20 18:48 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+RTR-INFVIAL uptime is 1 hour, 4 minutes
+Uptime for this control processor is 1 hour, 6 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: reload
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: ax
+License Type: Default. No valid license found.
+Next reload license Level: ax
+
+
+Smart Licensing Status: Smart Licensing is DISABLED
+
+cisco CSR1000V (VXE) processor (revision VXE) with 2182252K/3075K bytes of memory.
+Processor board ID 9X4PNGNFKEA
+1 Gigabit Ethernet interface
+32768K bytes of non-volatile configuration memory.
+3985032K bytes of physical memory.
+7774207K bytes of virtual hard disk at bootflash:.
+0K bytes of WebUI ODM Files at webui:.
+
+Configuration register is 0x2102
+
+RTR-INFVIAL#
+[2026-06-25 21:21:55,816] +++ RTR-INFVIAL: config +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+RTR-INFVIAL(config)#no logging console
+RTR-INFVIAL(config)#line console 0
+RTR-INFVIAL(config-line)#exec-timeout 0
+RTR-INFVIAL(config-line)#end
+RTR-INFVIAL#
+Traceback (most recent call last):
+  File "/tmp/run_genie2.py", line 15, in <module>
+    intf.learn()
+  File "/home/devasc/.local/lib/python3.8/site-packages/genie/libs/ops/interface/iosxe/interface.py", line 38, in learn
+    self.add_leaf(cmd=ShowVrf,
+  File "/home/devasc/.local/lib/python3.8/site-packages/genie/ops/base/base.py", line 82, in add_leaf
+    elif 'cli' in self.device.mapping:
+  File "src/pyats/topology/device.py", line 518, in pyats.topology.device.Device.__getattr__
+AttributeError: 'Device' object has no attribute 'mapping'
+[2026-06-25 21:23:34,312] +++ CSR1kv logfile /tmp/CSR1kv-default-20260625T212334311.log +++
+[2026-06-25 21:23:34,312] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 21:23:36,720] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 139934611228512 +++
+[2026-06-25 21:23:36,720] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#
+[2026-06-25 21:23:36,809] Learned hostname(s) : ['RTR-INFVIAL'].
+[2026-06-25 21:23:36,809] +++ initializing handle +++
+[2026-06-25 21:23:36,810] +++ RTR-INFVIAL: executing command 'term length 0' +++
+term length 0
+RTR-INFVIAL#
+[2026-06-25 21:23:36,993] +++ RTR-INFVIAL: executing command 'term width 0' +++
+term width 0
+RTR-INFVIAL#
+[2026-06-25 21:23:37,164] +++ RTR-INFVIAL: executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 16.09.05
+Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 30-Jan-20 18:48 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+RTR-INFVIAL uptime is 1 hour, 5 minutes
+Uptime for this control processor is 1 hour, 7 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: reload
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: ax
+License Type: Default. No valid license found.
+Next reload license Level: ax
+
+
+Smart Licensing Status: Smart Licensing is DISABLED
+
+cisco CSR1000V (VXE) processor (revision VXE) with 2182252K/3075K bytes of memory.
+Processor board ID 9X4PNGNFKEA
+1 Gigabit Ethernet interface
+32768K bytes of non-volatile configuration memory.
+3985032K bytes of physical memory.
+7774207K bytes of virtual hard disk at bootflash:.
+0K bytes of WebUI ODM Files at webui:.
+
+Configuration register is 0x2102
+
+RTR-INFVIAL#
+[2026-06-25 21:23:37,347] +++ RTR-INFVIAL: config +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+RTR-INFVIAL(config)#no logging console
+RTR-INFVIAL(config)#line console 0
+RTR-INFVIAL(config-line)#exec-timeout 0
+RTR-INFVIAL(config-line)#end
+RTR-INFVIAL#
+[2026-06-25 21:23:37,645] +++ RTR-INFVIAL: executing command 'show interfaces' +++
+show interfaces
+GigabitEthernet1 is up, line protocol is up 
+  Hardware is CSR vNIC, address is 0800.2778.243b (bia 0800.2778.243b)
+  Description: Enlace-WAN-Punta-Arenas
+  Internet address is 192.168.56.101/24
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full Duplex, 1000Mbps, link type is auto, media type is Virtual
+  output flow-control is unsupported, input flow-control is unsupported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     3182 packets input, 340042 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+     2685 packets output, 611809 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     4 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+Loopback16 is up, line protocol is up 
+  Hardware is Loopback
+  Internet address is 10.1.16.1/24
+  MTU 1514 bytes, BW 8000000 Kbit/sec, DLY 5000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation LOOPBACK, loopback not set
+  Keepalive set (10 sec)
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+RTR-INFVIAL#
+Guardado: interface_iosxe_CSR1kv_ops.txt
+[2026-06-25 21:23:37,854] +++ RTR-INFVIAL: executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 16.09.05
+Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 30-Jan-20 18:48 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+RTR-INFVIAL uptime is 1 hour, 5 minutes
+Uptime for this control processor is 1 hour, 7 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: reload
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: ax
+License Type: Default. No valid license found.
+Next reload license Level: ax
+
+
+Smart Licensing Status: Smart Licensing is DISABLED
+
+cisco CSR1000V (VXE) processor (revision VXE) with 2182252K/3075K bytes of memory.
+Processor board ID 9X4PNGNFKEA
+1 Gigabit Ethernet interface
+32768K bytes of non-volatile configuration memory.
+3985032K bytes of physical memory.
+7774207K bytes of virtual hard disk at bootflash:.
+0K bytes of WebUI ODM Files at webui:.
+
+Configuration register is 0x2102
+
+RTR-INFVIAL#
+Guardado: platform_iosxe_CSR1kv_ops.txt
+[2026-06-25 21:23:38,195] +++ RTR-INFVIAL: executing command 'show ip route' +++
+show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        10.1.16.0/24 is directly connected, Loopback16
+L        10.1.16.1/32 is directly connected, Loopback16
+      192.168.56.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.56.0/24 is directly connected, GigabitEthernet1
+L        192.168.56.101/32 is directly connected, GigabitEthernet1
+RTR-INFVIAL#
+Guardado: routing_iosxe_CSR1kv_ops.txt
+[2026-06-25 21:23:38,388] +++ RTR-INFVIAL: executing command 'show running-config' +++
+show running-config
+Building configuration...
+
+Current configuration : 3629 bytes
+!
+! Last configuration change at 21:23:48 UTC Thu Jun 25 2026 by cisco
+!
+version 16.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname RTR-INFVIAL
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no logging console
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+ip domain name cisco.com
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1024526588
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1024526588
+ revocation-check none
+ rsakeypair TP-self-signed-1024526588
+!
+!
+crypto pki certificate chain TP-self-signed-1024526588
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31303234 35323635 3838301E 170D3236 30363235 31393337 
+  31325A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 30323435 
+  32363538 38308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 0100AA3E 655A5D3A 9C355992 7FE5819C BBFDF322 CE78D930 518E6333 
+  C266366B 252C0263 E77A7706 88680745 C401C559 69342DE8 BDD03594 C57CED00 
+  72060079 758BF15A CF8EA363 38DF0C66 A25ADA32 B35D5A36 F124038D 99C891F0 
+  388C1469 8C4BEAE8 392A0D63 79A1A81A C08F23B3 B274B66F 06E56D20 1B9A5A87 
+  3705770B 0042B3EF 2B498868 679AD89D C157F0ED BD96DE16 FFC2DC12 DD666F86 
+  0B2E629B C60A157C 0CA03B7E 1577E719 EB457077 A35F9FC0 6929D41D E5E95AB4 
+  F1667173 84BE5A64 D502ABB2 DDB31C10 F163CA99 A9F56F6F CF48EDB0 6FAA47B6 
+  1694EDC1 355FEE73 0A7EAF4F DA5D2FFB 32EBDE72 12FE9976 4BE95FE9 C2D0898A 
+  CC876FC9 D5350203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 
+  301F0603 551D2304 18301680 14CF9442 8CAFD8FF 42DC142D 35469512 41E4FADE 
+  30301D06 03551D0E 04160414 CF94428C AFD8FF42 DC142D35 46951241 E4FADE30 
+  300D0609 2A864886 F70D0101 05050003 82010100 2E5F4AF4 63900349 A759B239 
+  0D67C204 F303AF0A 591D540B 734A2323 81F85F0E 1F358DC0 5A19F0F7 A2F34F39 
+  2D6C6CCA 3EA92BEA FAA08D74 EACF4FA0 054BFD11 8A26B148 570BA498 A882A3D7 
+  9268C68F 88000293 47C7DEB8 4149B8F8 134F1517 684463F6 1FBBF715 EC5F9B9B 
+  6E5A5E6E 7F45284C 708346B5 249E6F78 BFB67522 2FB6D0A6 980F4998 054F1090 
+  4E5D3B25 551DC95D ECD4A62A 0FBD71C2 96A0C5F9 3DF91F85 96150DA6 BE161B89 
+  1524CA8E F2DE7185 F235F4A3 AF7DE253 8FB183DF DFE1A344 C1397804 F1155164 
+  CBBF9C8D BFC26507 901BDA61 914EB31F ADF4E3F3 3E926CD9 48C9AE37 387AE213 
+  CCEC7AEC D746EB5F 34A41465 35AACBD0 906E2182
+  	quit
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid CSR1000V sn 9X4PNGNFKEA
+no license smart enable
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+netconf-yang
+!
+restconf
+!
+username cisco privilege 15 password 0 cisco123
+!
+redundancy
+!
+!
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface Loopback16
+ ip address 10.1.16.1 255.255.255.0
+!
+interface GigabitEthernet1
+ description Enlace-WAN-Punta-Arenas
+ ip address 192.168.56.101 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+ip forward-protocol nd
+ip http server
+ip http authentication local
+ip http secure-server
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+banner motd ^C ACCESO RESTRINGIDO - INFVIAL ^C
+!
+line con 0
+ exec-timeout 0 0
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+ntp server 208.67.222.222
+!
+!
+!
+!
+!
+end
+
+RTR-INFVIAL#
+Guardado: config_iosxe_CSR1kv_ops.txt
+Snapshot final completado
+Diff completado
+
+==================================================
+   CERTIFICADO DE COMPLIANCE — EP3
+==================================================
+Alumno  : Matias Queralto
+Codigo  : 001V-16
+Empresa : Infraestructura Vial SpA
+Router  : RTR-INFVIAL
+Fecha   : 2026-06-25 21:25:07
+==================================================
+VALIDACION NETCONF  : CONFORME
+VALIDACION RESTCONF : CONFORME
+--------------------------------------------------
+RESULTADO GLOBAL    : CONFORME
+==================================================
+El equipo RTR-INFVIAL ha sido configurado
+y validado exitosamente para Infraestructura Vial SpA.
+Listo para operar en produccion.
+==================================================
+
+Certificado guardado en evidencias/certificado_compliance_001V-16.txt

@@ -1,0 +1,180 @@
+Building configuration...
+
+Current configuration : 3629 bytes
+!
+! Last configuration change at 21:23:48 UTC Thu Jun 25 2026 by cisco
+!
+version 16.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname RTR-INFVIAL
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no logging console
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+ip domain name cisco.com
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1024526588
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1024526588
+ revocation-check none
+ rsakeypair TP-self-signed-1024526588
+!
+!
+crypto pki certificate chain TP-self-signed-1024526588
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31303234 35323635 3838301E 170D3236 30363235 31393337 
+  31325A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 30323435 
+  32363538 38308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 0100AA3E 655A5D3A 9C355992 7FE5819C BBFDF322 CE78D930 518E6333 
+  C266366B 252C0263 E77A7706 88680745 C401C559 69342DE8 BDD03594 C57CED00 
+  72060079 758BF15A CF8EA363 38DF0C66 A25ADA32 B35D5A36 F124038D 99C891F0 
+  388C1469 8C4BEAE8 392A0D63 79A1A81A C08F23B3 B274B66F 06E56D20 1B9A5A87 
+  3705770B 0042B3EF 2B498868 679AD89D C157F0ED BD96DE16 FFC2DC12 DD666F86 
+  0B2E629B C60A157C 0CA03B7E 1577E719 EB457077 A35F9FC0 6929D41D E5E95AB4 
+  F1667173 84BE5A64 D502ABB2 DDB31C10 F163CA99 A9F56F6F CF48EDB0 6FAA47B6 
+  1694EDC1 355FEE73 0A7EAF4F DA5D2FFB 32EBDE72 12FE9976 4BE95FE9 C2D0898A 
+  CC876FC9 D5350203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 
+  301F0603 551D2304 18301680 14CF9442 8CAFD8FF 42DC142D 35469512 41E4FADE 
+  30301D06 03551D0E 04160414 CF94428C AFD8FF42 DC142D35 46951241 E4FADE30 
+  300D0609 2A864886 F70D0101 05050003 82010100 2E5F4AF4 63900349 A759B239 
+  0D67C204 F303AF0A 591D540B 734A2323 81F85F0E 1F358DC0 5A19F0F7 A2F34F39 
+  2D6C6CCA 3EA92BEA FAA08D74 EACF4FA0 054BFD11 8A26B148 570BA498 A882A3D7 
+  9268C68F 88000293 47C7DEB8 4149B8F8 134F1517 684463F6 1FBBF715 EC5F9B9B 
+  6E5A5E6E 7F45284C 708346B5 249E6F78 BFB67522 2FB6D0A6 980F4998 054F1090 
+  4E5D3B25 551DC95D ECD4A62A 0FBD71C2 96A0C5F9 3DF91F85 96150DA6 BE161B89 
+  1524CA8E F2DE7185 F235F4A3 AF7DE253 8FB183DF DFE1A344 C1397804 F1155164 
+  CBBF9C8D BFC26507 901BDA61 914EB31F ADF4E3F3 3E926CD9 48C9AE37 387AE213 
+  CCEC7AEC D746EB5F 34A41465 35AACBD0 906E2182
+  	quit
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid CSR1000V sn 9X4PNGNFKEA
+no license smart enable
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+netconf-yang
+!
+restconf
+!
+username cisco privilege 15 password 0 cisco123
+!
+redundancy
+!
+!
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface Loopback16
+ ip address 10.1.16.1 255.255.255.0
+!
+interface GigabitEthernet1
+ description Enlace-WAN-Punta-Arenas
+ ip address 192.168.56.101 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+ip forward-protocol nd
+ip http server
+ip http authentication local
+ip http secure-server
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+banner motd ^C ACCESO RESTRINGIDO - INFVIAL ^C
+!
+line con 0
+ exec-timeout 0 0
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+ntp server 208.67.222.222
+!
+!
+!
+!
+!
+end

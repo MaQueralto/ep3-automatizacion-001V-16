@@ -1,0 +1,72 @@
+[2026-06-25 20:48:38,532] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 20:48:38,532] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 20:48:38,858] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no, id: 139674598694000 +++
+[2026-06-25 20:48:38,858] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#[2026-06-25 20:50:45,723] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 20:50:45,723] +++ Unicon plugin iosxe +++
+
+[2026-06-25 20:50:46,289] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no, id: 140644493233312 +++
+[2026-06-25 20:50:46,289] connection to CSR1kv
+Password: 
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#[2026-06-25 20:53:15,617] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 20:53:15,617] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 20:53:16,084] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no, id: 140526176943360 +++
+[2026-06-25 20:53:16,084] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#[2026-06-25 20:55:40,979] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 20:55:40,979] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 20:55:41,485] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 140535577873664 +++
+[2026-06-25 20:55:41,485] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+RTR-INFVIAL#[2026-06-25 20:57:37,943] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 20:57:37,943] +++ Unicon plugin iosxe +++
+
+[2026-06-25 20:57:38,446] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 140416152173824 +++
+[2026-06-25 20:57:38,446] connection to CSR1kv
+Password: 
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#[2026-06-25 21:16:28,820] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 21:16:28,820] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 21:16:29,338] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 139867215715584 +++
+[2026-06-25 21:16:29,338] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#[2026-06-25 21:19:33,011] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 21:19:33,011] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 21:19:35,512] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 140616249314560 +++
+[2026-06-25 21:19:35,512] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#[2026-06-25 21:19:57,814] +++ CSR1kv logfile evidencias/snapshot_final_001V-16/connection_CSR1kv.txt +++
+[2026-06-25 21:19:57,815] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-25 21:20:00,316] +++ connection to spawn: ssh -l cisco 192.168.56.101 -p 22, id: 140005356850432 +++
+[2026-06-25 21:20:00,317] connection to CSR1kv
+
+ ACCESO RESTRINGIDO - INFVIAL 
+
+
+RTR-INFVIAL#
