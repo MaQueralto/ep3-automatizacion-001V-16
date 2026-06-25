@@ -1,0 +1,16 @@
+==================================================
+Script  : validacion_restconf.py
+Fecha   : 2026-06-25 20:47:28
+Host    : labvm
+==================================================
+
+Consultando endpoints RESTCONF...
+
+--- REPORTE DE VALIDACION RESTCONF ---
+[OK] hostname: obtenido='RTR-INFVIAL' esperado='RTR-INFVIAL'
+[OK] loopback_ip: obtenido='10.1.16.1' esperado='10.1.16.1'
+[OK] descripcion_wan: obtenido='Enlace-WAN-Punta-Arenas' esperado='Enlace-WAN-Punta-Arenas'
+[OK] ntp_server: obtenido='208.67.222.222' esperado='208.67.222.222'
+
+Resultado: 4/4 criterios conformes
+CONFORME
